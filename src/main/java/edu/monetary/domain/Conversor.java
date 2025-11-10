@@ -24,12 +24,12 @@ public class Conversor {
         this.mapper = new ObjectMapper();
     }
 
-    public void calculate() throws IOException, InterruptedException {
+    public BigDecimal calculate() throws IOException, InterruptedException {
         String jsonString = this.getExchangeRates();
 
         Double destinyRate = getDestinyRate(jsonString);
         
-        data.setDestinyAmount(data.getOriginAmount().multiply(BigDecimal.valueOf(destinyRate)));
+        return data.getOriginAmount().multiply(BigDecimal.valueOf(destinyRate));
     }
 
     private String getExchangeRates() throws IOException, InterruptedException {
