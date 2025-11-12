@@ -10,9 +10,9 @@
 ## ✨ Funcionalidades
 
 - [x] Conversão entre um par de moedas (ex: de USD para BRL).
-- [ ] Listagem de todas as moedas suportadas.
-- [ ] Utilização de uma API externa para obter as taxas de câmbio mais recentes.
-- [ ] Interface de usuário interativa no console.
+- [x] Listagem de todas as moedas suportadas.
+- [x] Utilização de uma API externa para obter as taxas de câmbio mais recentes.
+- [x] Interface de usuário interativa no console.
 
 ## 🛠️ Tecnologias Utilizadas
 
