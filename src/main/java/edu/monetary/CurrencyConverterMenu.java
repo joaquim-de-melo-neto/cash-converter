@@ -257,6 +257,12 @@ public class CurrencyConverterMenu {
         return code;
     }
 
+    /**
+     * Solicita ao usuário o valor a ser convertido e valida a entrada.
+     * @param scanner O objeto Scanner para leitura de entrada.
+     * @param currencyCode O código da moeda para exibir na mensagem.
+     * @return O valor válido inserido pelo usuário como BigDecimal.
+     */
     private static BigDecimal getAmount(Scanner scanner, String currencyCode) {
         BigDecimal amount = null;
         boolean valid = false;

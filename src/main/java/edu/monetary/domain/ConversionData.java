@@ -2,6 +2,12 @@ package edu.monetary.domain;
 
 import java.math.BigDecimal;
 
+/**
+ * ConversionData class representing the data required for currency conversion.
+ * It holds the amount to be converted, the base currency code, and the target currency code.
+ * @author Joaquim Neto
+ * @version 1.0
+ */
 public class ConversionData{
 
     private BigDecimal amount; 
