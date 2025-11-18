@@ -25,7 +25,7 @@ public class CurrencyConverterApplication {
 		try {
 
 			BigDecimal montanteFinal = conversor.calculate();
-			print("\n🤑 -> Valor convertido: " + data.getTargetCode() + " " + montanteFinal.setScale(2, RoundingMode.DOWN).toPlainString());
+			System.out.printf("\n🤑 -> Valor convertido: %s %s equivalem a %s %s.\n\n", data.getBaseCode(), data.getAmount().setScale(2,RoundingMode.DOWN).toPlainString(), data.getTargetCode() , montanteFinal.setScale(2, RoundingMode.DOWN).toPlainString());
 		
 		} catch (InterruptedException ie) {
 			System.out.println("The operation was interrupted: " + ie.getMessage());	
@@ -38,10 +38,6 @@ public class CurrencyConverterApplication {
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-	}
-
-	private static void print(String string) {
-		System.out.println(string);
 	}
 
 }

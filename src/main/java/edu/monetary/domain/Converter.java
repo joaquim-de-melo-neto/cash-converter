@@ -20,7 +20,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * Converter class responsible for currency conversion using an external API.
  * It fetches exchange rates and calculates the converted amount.
- * 
  * @author Joaquim Neto
  * @version 1.0
  */
@@ -38,10 +37,8 @@ public class Converter {
     /**
      * Calculates the converted amount based on the exchange rate fetched from the
      * API.
-     * 
      * @return BigDecimal representing the converted amount.
-     * @throws IOException          if an I/O error occurs when sending or
-     *                              receiving.
+     * @throws IOException if an I/O error occurs when sending or receiving.
      * @throws InterruptedException if the operation is interrupted.
      */
     public BigDecimal calculate() throws IOException, InterruptedException {
@@ -54,10 +51,8 @@ public class Converter {
 
     /**
      * Fetches exchange rates from the external API.
-     * 
      * @return JSON string containing exchange rate information.
-     * @throws IOException           if an I/O error occurs when sending or
-     *                               receiving.
+     * @throws IOException           if an I/O error occurs when sending or receiving.
      * @throws InterruptedException  if the operation is interrupted.
      * @throws IllegalStateException if the API key is not found.
      */
@@ -77,7 +72,6 @@ public class Converter {
 
     /**
      * Reads the API key from the application properties file.
-     * 
      * @return String representing the API key.
      * @throws IOException if there is an error reading the properties file.
      */
@@ -104,7 +98,6 @@ public class Converter {
 
     /**
      * Extracts the conversion rate from the JSON response.
-     * 
      * @param jsonString JSON string containing exchange rate information.
      * @return Double representing the conversion rate.
      * @throws JsonProcessingException if there is a problem processing the JSON.

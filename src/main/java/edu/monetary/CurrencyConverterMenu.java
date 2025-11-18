@@ -220,7 +220,7 @@ public class CurrencyConverterMenu {
 
         System.out.println("\n=================================================");
         System.out.println("✅ SELEÇÃO CONCLUÍDA!");
-        System.out.println("Moeda de Origem Selecionada: " + baseCode + " - " + CURRENCIES.get(baseCode));
+        System.out.println("Moeda de Origem Selecionada:  " + baseCode + " - " + CURRENCIES.get(baseCode));
         System.out.println("Moeda de Destino Selecionada: " + targetCode + " - " + CURRENCIES.get(targetCode));
         System.out.println("=================================================");
 
@@ -249,6 +249,8 @@ public class CurrencyConverterMenu {
             } else {
                 System.err.println("❌ Erro: Código de moeda '" + code + "' não encontrado. Tente novamente ou digite 'S' para ver a lista.");
                 // Permite ver a lista caso o usuário erre o código e precise de ajuda
+                System.out.print("\nInsira o código da moeda " + prompt + " ");
+                code = scanner.nextLine().trim().toUpperCase();
                 if (code.equals("S")) {
                      displayCurrencyList();
                 }

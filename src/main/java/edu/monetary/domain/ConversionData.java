@@ -10,9 +10,9 @@ import java.math.BigDecimal;
  */
 public class ConversionData{
 
-    private BigDecimal amount; 
-    private String baseCode; 
-    private String targetCode;
+    private final BigDecimal amount; 
+    private final String baseCode; 
+    private final String targetCode;
 
 
     public ConversionData(BigDecimal amount, String baseCode, String targetCode) {
